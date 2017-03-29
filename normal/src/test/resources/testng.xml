@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+    <parameter name="url" value="http://retailmenot.com"/>
+    <parameter name="merchant" value="amazon"/>
+
+    <test verbose="1" name="untitled" annotations="JDK">
+        <groups>
+            <run>
+                <include name="functional"/>
+                <include name="UI"/>
+            </run>
+        </groups>
+
+        <classes>
+
+            <class name="com.vdrips.test.reportng.normal.NormalTest">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="tearDown"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>

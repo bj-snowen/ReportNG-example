@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+    <parameter name="url" value="http://retailmenot.com"/>
+    <parameter name="merchant" value="amazon"/>
+
+    <test verbose="1" name="untitled" annotations="JDK">
+        <packages>
+            <package name="com.vdrips.test.reportng.config"/>
+        </packages>
+
+    </test>
+
+</suite>
